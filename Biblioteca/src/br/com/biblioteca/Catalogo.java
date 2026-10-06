@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 
 public class Catalogo{
+
     List<Livros> catalogo = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
     String AddNomeLivro ;
@@ -33,11 +34,23 @@ public class Catalogo{
         AddAutorLivro = scanner.nextLine();
 
 
+
+        Livros novosLivros = new Livros();
+        novosLivros.setNomeDoLivro(AddNomeLivro);
+        novosLivros.setValorDoLivro(AddValorLivro);
+        novosLivros.setQuantidadeDeLivro(AddQtdLivro);
+        novosLivros.setAutor(AddAutorLivro);
+
+        catalogo.add(novosLivros);
+
         System.out.println("Livro Adicionado");
 
-
-
     }
+
+
+
+
+
     public void MostrarCatalogo() {
 
         Livros livroUm = new Livros();
@@ -93,7 +106,6 @@ public class Catalogo{
         catalogo.add(livroSete);
 
 
-
         for (Livros livros: catalogo) {
             System.out.println("Livro: " + livros.getNomeDoLivro());
             System.out.println("Valor: R$ " + livros.getValorDoLivro());
@@ -101,6 +113,5 @@ public class Catalogo{
             System.out.println("Autor: "+ livros.getAutor());
             System.out.println("-------------------");
         }
-
     }
 }

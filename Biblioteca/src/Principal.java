@@ -1,8 +1,7 @@
 import br.com.biblioteca.Catalogo;
 import br.com.biblioteca.Livros;
 import br.com.biblioteca.usuarios.Clientes;
-import br.com.biblioteca.usuarios.Funcionario;
-import br.com.biblioteca.usuarios.Pessoa;
+
 
 import java.util.Scanner;
 
@@ -12,12 +11,7 @@ public class Principal {
         Catalogo catalogo = new Catalogo();
         Clientes cliente = new Clientes();
         Scanner scanner = new Scanner(System.in);
-        //Pessoa funcionario = new Funcionario();
-
-        String livroEscolhido ;
-       // funcionario.setNome("Pedro");
-       // funcionario.nome = "Pedro";
-
+        String livroEscolhido;
 
 
         int opcao = 0;
