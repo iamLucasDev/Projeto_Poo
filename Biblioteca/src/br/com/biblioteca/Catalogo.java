@@ -1,8 +1,6 @@
 package br.com.biblioteca;
-import  br.com.biblioteca.Livros;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Scanner;
 
 
@@ -43,7 +41,7 @@ public class Catalogo{
 
         catalogo.add(novosLivros);
 
-        System.out.println("Livro Adicionado");
+        System.out.println("Livro Adicionado!");
 
     }
 
@@ -60,7 +58,7 @@ public class Catalogo{
         livroUm.setAutor("Nolan");
 
         Livros livroDois = new Livros();
-        livroDois.setNomeDoLivro("O Hobbit"); ;
+        livroDois.setNomeDoLivro("O Hobbit");
         livroDois.setValorDoLivro(40);
         livroDois.setQuantidadeDeLivro(10);
         livroDois.setAutor("J.R.R. Tolkien");
